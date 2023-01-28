@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Home = () => {
-let name = 'John'
+let name = 'John' 
     const handleClick = (e) => {
         console.log('hello click', e)
     }
