@@ -1,6 +1,7 @@
 import { useState } from "react"
-const Home = () => {
 
+const Home = () => {
+let name = 'John'
     const handleClick = (e) => {
         console.log('hello click', e)
     }
@@ -13,6 +14,7 @@ const Home = () => {
             <h2>Home here </h2>
             <button onClick={ handleClick }>Click me </button>
             {/* <button onClick={ (e) => {clickMe('jospw', e) }}>Click again</button> */}
+            <p>{name} </p>
         </div>
      );
 }
