@@ -5,7 +5,7 @@ const Home = () => {
     }
 
     const clickMe = (name, e) => {
-        console.log('hello ' + name, e.target.value)
+        console.log('hello ' + name, e.target)
     }
     return ( 
         <div className="home">
