@@ -18,7 +18,7 @@ const Home = () => {
             <h2>Home here </h2>
             <button onClick={ handleClick }>Click me </button>
             {/* <button onClick={ (e) => {clickMe('jospw', e) }}>Click again</button> */}
-            <p>{name} </p>
+            <p>{name}  is {age} years old</p>
         </div>
      );
 }
