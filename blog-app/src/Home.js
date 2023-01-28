@@ -7,6 +7,7 @@ const Home = () => {
 
     const handleClick = (e) => {
         setName('Paul')
+        setAge('50')
         console.log('hello click', e)
     }
 
