@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home">
             <h2>Home here </h2>
             <button onClick={ handleClick }>Click me </button>
-            <button onClick={ () => {clickMe('jospw') }}>Click again</button>
+            <button onClick={ (e) => {clickMe('jospw', e.target) }}>Click again</button>
         </div>
      );
 }
