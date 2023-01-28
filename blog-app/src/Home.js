@@ -1,4 +1,5 @@
 import { useState } from "react"
+import BlogList from "./BlogList";
 
 const Home = () => {
     const [blogs, setBlogs] = useState([  
@@ -7,7 +8,7 @@ const Home = () => {
     { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }])
     return ( 
         <div className="home">
-        
+         <BlogList />
      
         </div>
      );
