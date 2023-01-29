@@ -12,7 +12,8 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log('use effect called')
+      fetch(' http://localhost:8000/blogs')
+        .then()
     })
     return ( 
         <div className="home">
