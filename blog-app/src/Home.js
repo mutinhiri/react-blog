@@ -23,8 +23,8 @@ const Home = () => {
     })
     return ( 
         <div className="home">
-         {/* <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>
-         <BlogList blogs={blogs.filter((blog) => {
+         <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>
+         {/* <BlogList blogs={blogs.filter((blog) => {
            return  blog.author === 'mario'
          })} title= {title} handleDelete={handleDelete}/> */}
         </div>
