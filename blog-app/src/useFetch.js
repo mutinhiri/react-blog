@@ -23,6 +23,8 @@ const useFetch = () => {
              setError(err.message)
           })
       }, [])
+
+      return { data, isPending, error }
 }
 
 export default useFetch
