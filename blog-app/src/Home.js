@@ -16,14 +16,16 @@ const Home = () => {
         .then(res => {
            return res.json()
         })
-        .then(data => )
+        .then(data => {
+            console.log(data)
+        })
     })
     return ( 
         <div className="home">
-         <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>
+         {/* <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>
          <BlogList blogs={blogs.filter((blog) => {
            return  blog.author === 'mario'
-         })} title= {title} handleDelete={handleDelete}/>
+         })} title= {title} handleDelete={handleDelete}/> */}
         </div>
      );
 }
