@@ -1,4 +1,10 @@
+import { useEffect, useState } from "react"
+
 const useFetch = () => {
+    const [data, setData] = useState(null)
+    const [isPending, setIsPending] = useState(true)
+    const [error, setError] = useState(null)
+
     useEffect(() => {
         fetch(' http://localhost:8000/blogss')
           .then(res => {
@@ -8,7 +14,7 @@ const useFetch = () => {
              return res.json()
           })
           .then(data => {
-              setBlogs(data)
+              setData(data)
               setIsPending(false)
               setError(null)
           })
@@ -18,3 +24,5 @@ const useFetch = () => {
           })
       }, [])
 }
+
+export default useFetch
