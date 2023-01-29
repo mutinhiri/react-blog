@@ -32,6 +32,7 @@ const Home = () => {
     return ( 
         <div className="home">
             { isPending && <div>Loading ...</div>}
+            { error && <div>{ error }</div>}
         {blogs && <BlogList blogs={blogs} title="All Bloggers" />}
          {/* <BlogList blogs={blogs.filter((blog) => {
            return  blog.author === 'mario'
