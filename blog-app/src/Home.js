@@ -4,6 +4,7 @@ import BlogList from "./BlogList";
 const Home = () => {
     const [blogs, setBlogs] = useState(null)
     const [isPending, setIsPending] = useState(true)
+    const [error, setError] = useState(null)
 
     const title = 'new title set now'
 
