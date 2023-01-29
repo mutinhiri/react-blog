@@ -16,7 +16,7 @@ const Home = () => {
          <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>
          <BlogList blogs={blogs.filter((blog) => {
            return  blog.author === 'mario'
-         })} title="Mario's blogs"/>
+         })} title="Mario's blogs" handleDelete={handleDelete}/>
         </div>
      );
 }
