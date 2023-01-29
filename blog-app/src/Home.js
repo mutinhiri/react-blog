@@ -15,8 +15,8 @@ const Home = () => {
     useEffect(() => {
       fetch(' http://localhost:8000/blogs')
         .then(res => {
-            if( res.ok) {
-                
+            if(!res.ok) {
+                throw Error('could not fetch data for resource')
             }
            return res.json()
         })
