@@ -26,7 +26,7 @@ const Home = () => {
             setIsPending(false)
         })
         .catch(err => {
-            console.log(err.message)
+           setError(err.message)
         })
     }, [])
     return ( 
