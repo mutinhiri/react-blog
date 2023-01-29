@@ -7,8 +7,8 @@ const Home = () => {
     { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
     { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }])
 
-    const handleDelete = () => {
-        
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter()
     }
     return ( 
         <div className="home">
