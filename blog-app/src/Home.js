@@ -17,13 +17,13 @@ const Home = () => {
            return res.json()
         })
         .then(data => {
-            console.log(data)
+            // console.log(data)
             setBlogs(data)
         })
     })
     return ( 
         <div className="home">
-         <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>
+        {blogs && <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>}
          {/* <BlogList blogs={blogs.filter((blog) => {
            return  blog.author === 'mario'
          })} title= {title} handleDelete={handleDelete}/> */}
