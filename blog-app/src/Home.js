@@ -16,6 +16,7 @@ const Home = () => {
         .then(res => {
            return res.json()
         })
+        .then(data => )
     })
     return ( 
         <div className="home">
