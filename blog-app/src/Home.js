@@ -15,6 +15,9 @@ const Home = () => {
     useEffect(() => {
       fetch(' http://localhost:8000/blogs')
         .then(res => {
+            if( res.ok) {
+                
+            }
            return res.json()
         })
         .then(data => {
