@@ -20,7 +20,7 @@ const Home = () => {
             // console.log(data)
             setBlogs(data)
         })
-    })
+    }, [])
     return ( 
         <div className="home">
         {blogs && <BlogList blogs={blogs} title="All Bloggers" handleDelete={handleDelete}/>}
