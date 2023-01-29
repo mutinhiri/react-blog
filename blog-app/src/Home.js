@@ -18,8 +18,8 @@ const Home = () => {
            return res.json()
         })
         .then(data => {
-            // console.log(data)
             setBlogs(data)
+            setIsPending(false)
         })
     }, [])
     return ( 
