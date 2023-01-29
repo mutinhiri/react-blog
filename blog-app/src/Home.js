@@ -10,7 +10,7 @@ const Home = () => {
     const title = 'new title set now'
 
     const handleDelete = (id) => {
-        const newBlogs = blogs.filter(blog => blog.id === id)
+        const newBlogs = blogs.filter(blog => blog.id !== id)
         setBlogs(newBlogs)
     }
     return ( 
