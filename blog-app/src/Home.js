@@ -22,7 +22,7 @@ const Home = () => {
             setIsPending(false)
         })
         .catch(err => {
-            console.log(err)
+            console.log(err.message)
         })
     }, [])
     return ( 
