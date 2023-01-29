@@ -13,7 +13,7 @@ const Home = () => {
     // }
 
     useEffect(() => {
-      fetch(' http://localhost:8000/blogs')
+      fetch(' http://localhost:8000/blogss')
         .then(res => {
             if(!res.ok) {
                 throw Error('could not fetch data for resource')
