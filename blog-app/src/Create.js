@@ -4,7 +4,15 @@ const Create = () => {
             <h2> Add a new blog</h2>
             <form>
                <label>Blog Title</label>
-               <input/>
+               <input
+                    type="text"
+                    required
+                />
+                <label>Blog Body</label>
+              <textarea >
+
+              </textarea>
+                
             </form>
         </div>
      );
