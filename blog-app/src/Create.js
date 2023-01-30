@@ -7,8 +7,9 @@ const Create = () => {
     const [author, setAuthor] = useState('mario')
 
     const handleSubmit = (e) => {
-        console.log('called')
-        // e.preventDefault()
+        const blog = { title, body, author}
+        console.log(blog)
+        e.preventDefault()
     }
 
     return ( 
