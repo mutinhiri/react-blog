@@ -4,6 +4,7 @@ const Create = () => {
 
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
+    const [author, setAuthor] = useState('mario')
     return ( 
         <div className="create">
             <h2> Add a new blog</h2>
