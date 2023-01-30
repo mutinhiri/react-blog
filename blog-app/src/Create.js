@@ -6,10 +6,14 @@ const Create = () => {
     const [body, setBody] = useState('')
     const [author, setAuthor] = useState('mario')
 
+    const handleSubmit = (e) => {
+        console.log('called')
+    }
+
     return ( 
         <div className="create">
             <h2> Add a new blog</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                <label>Blog Title</label>
                <input
                     type="text"
