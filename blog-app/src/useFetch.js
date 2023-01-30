@@ -22,6 +22,7 @@ const useFetch = (url) => {
               setIsPending(false)
              setError(err.message)
           })
+          return () => console.log('cleanup')
       }, [url])
 
       return { data, isPending, error }
