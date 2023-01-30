@@ -1,12 +1,18 @@
+import { useState } from "react";
+
 const Create = () => {
+
+    const [title, setTitle] = useState('')
     return ( 
-        <div className="title">
+        <div className="create">
             <h2> Add a new blog</h2>
             <form>
                <label>Blog Title</label>
                <input
                     type="text"
                     required
+                    value={title}
+                    onChange={(e) => {setTitle(e.target.value)}}
                 />
                 <label>Blog Body</label>
               <textarea required>
