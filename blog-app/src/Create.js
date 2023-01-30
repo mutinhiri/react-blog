@@ -9,7 +9,7 @@ const Create = () => {
                     required
                 />
                 <label>Blog Body</label>
-              <textarea >
+              <textarea required>
 
               </textarea>
                 
