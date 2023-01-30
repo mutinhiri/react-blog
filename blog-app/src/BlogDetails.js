@@ -10,6 +10,11 @@ const BlogDetails = () => {
             {/* <h2> Blog details- { id }</h2> */}
             { isPending && <div> Loading ...</div>}
             { error && <div> { error }</div>}
+            { blog && (
+                <article>
+                    <h2> {blog.title }</h2>
+                </article>
+            )}
         </div>
      );
 }
