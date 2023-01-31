@@ -4,6 +4,10 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
     const { id } = useParams()
     const { data:blog, isPending, error } = useFetch('http://localhost:8000/blogs/' + id)
+
+    const handleDelete = () => {
+        fetch('http://localhost:8000/blogs')
+    }
    
     return ( 
         <div className="blog-details">
