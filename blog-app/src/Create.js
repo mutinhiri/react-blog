@@ -21,6 +21,7 @@ const Create = () => {
         }).then(() =>{
             console.log('edit')
             setIsPending(false)
+            history.go(-1)
         })
     }
 
