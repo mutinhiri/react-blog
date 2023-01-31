@@ -8,7 +8,7 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         const blog = { title, body, author}
-        console.log(blog)
+       
         e.preventDefault()
     }
 
