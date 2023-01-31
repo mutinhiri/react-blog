@@ -10,12 +10,15 @@ const Create = () => {
     const handleSubmit = (e) => {
         const blog = { title, body, author}
         e.preventDefault()
+
+        setIsPending(true)
         fetch('http://localhost:8000/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(blog)
         }).then(() =>{
             console.log('edit')
+            setIsPending(false)
         })
     }
 
