@@ -9,7 +9,10 @@ const Create = () => {
     const handleSubmit = (e) => {
         const blog = { title, body, author}
         e.preventDefault()
-        fetch('http://localhost:8000/blogs')
+        fetch('http://localhost:8000/blogs', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json"}
+        })
     }
 
     return ( 
