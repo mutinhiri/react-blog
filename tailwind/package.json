@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "postcss tailwindcss -o dist/css/styles.css"
+   "build": "postcss tailwindcss -o dist/css/styles.css",
+   "watch": "postcss tailwindcss -o dist/css/styles.css --watch"
   },
   "author": "",
   "license": "ISC",
